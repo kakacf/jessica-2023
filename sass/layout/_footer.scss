@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: $bg-color-primary;
+    padding: $section-padding;
+
+    &__container {
+        display: flex;
+        align-items: start;
+        gap: 2rem;
+    }
+
+
+    &__article {
+        flex: 1;
+
+    }
+
+
+    &__links {
+        flex: 1;
+
+    }
+
+
+
+}

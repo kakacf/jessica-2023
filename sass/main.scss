@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;800&display=swap');
+
+// abstracts
+@import "abstracts/_variables.scss";
+
+// base
+@import "base/_base.scss";
+
+// layout
+@import "layout/_header.scss";
+@import "layout/_section-1.scss";
+@import "layout/_section-2.scss";
+@import "layout/_section-3.scss";
+@import "layout/_section-4.scss";
+@import "layout/_footer.scss";

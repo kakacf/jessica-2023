@@ -1,0 +1,86 @@
+.section-4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: $bg-color-secondary;
+    padding: $section-padding;
+
+    .section__container {
+        display: flex;
+        padding: $section-padding-top-bottom;
+        gap: 3rem;
+        overflow: hidden;
+    }
+
+    .card {
+        border: 1px solid $color-light-grey;
+        min-width: 33rem;
+        min-height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 3rem;
+        gap: 2rem;
+        border-radius: 2rem;
+
+        &__head {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+
+            &__text {
+                font-size: 1.8rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            &__name {
+                color: $color-primary;
+            }
+
+            &__money {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__msg {
+            line-height: 1.5;
+            flex: 2;
+        }
+
+        &__btn {
+            width: 100%;
+            min-height: 5rem;
+            background-color: $bg-color-secondary;
+            color: $color-primary;
+            border: 1px solid $color-light-grey;
+            &:hover {
+                background-color: $bg-color-third;
+                color: $color-white;
+            }
+        }
+    }
+
+    .fa-solid {
+        position: absolute;
+        cursor: pointer;
+        font-size: $icon-size-arrow;
+        color: $color-primary;
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    .fa-circle-chevron-left {
+        top: calc(50% - $icon-size-arrow / 2);
+        left: calc($icon-size-arrow / 2);
+    }
+
+    .fa-circle-chevron-right {
+        top: calc(50% - $icon-size-arrow / 2);
+        right: calc($icon-size-arrow / 2);
+    }
+
+}

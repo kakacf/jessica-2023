@@ -1,0 +1,52 @@
+.section-3 {
+    display: flex;
+    justify-content: center;
+    background-color: $bg-color-secondary;
+    padding: $section-padding-left-right;
+    border-radius: 2rem;
+    background-color: $bg-color-third;
+    color: $color-white;
+    
+
+    .section__container {
+        // height: 60rem; // TODO: 這裡要改
+        padding: 10rem 0 0 0;
+        gap: 2rem;
+
+    }
+
+    .article {
+        // flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        &__title {
+            font-size: 3.5rem;
+            font-weight: $font-weight-bold;
+            padding-top: 10rem;
+        }
+
+        &__sub {
+            width: 80%;
+            line-height: 1.6;
+            font-weight: $font-weight-normal;
+        }
+
+        &__btns--free {
+            background-color: $bg-color-secondary;
+            color: $color-primary;
+            &:hover {
+                background-color: $color-secondary;
+                border: 1px solid $color-white;
+                color: $color-white;
+            }
+        }
+    }
+
+    .img {
+        // flex: 2;
+        // max-width: 65rem;
+        width: 60%;
+    }
+}

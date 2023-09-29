@@ -1,0 +1,79 @@
+.section-1 {
+    display: flex;
+    justify-content: center;
+    background-color: $bg-color-primary;
+    padding: $section-padding;
+
+    .section__container {
+        // width: 100%;
+        // height: 60rem; // TODO: 這裡要改
+        display: flex;
+        align-items: start;
+        // font-size: $font-size-default;
+        // padding: 2rem 0;
+    }
+
+    .article {
+        flex: 1.2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+
+        &__title {
+            font-size: 5rem;
+            font-weight: $font-weight-bold;
+        }
+
+        &__sub {
+            font-size: 2.8rem;
+            color: $color-dark-grey;
+
+        }
+
+        &__btn {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        // &__list {
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     align-items: center;
+        //     gap: 2.5rem;
+        //     color: $color-dark-grey;
+        //     font-size: 1.8rem;
+        //     &__item {
+        //         gap: 1rem;
+        //     }
+        // }
+    }
+
+    .img {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        // https://segmentfault.com/a/1190000003931845
+        &__square {
+            position: relative;
+            width: 40rem;
+            height: 40rem;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 1rem solid $color-white;
+        }
+
+        &__kaka {
+
+            width: 100%;
+            height: auto;
+            margin-top: -8%;
+        }
+    }
+
+
+}
