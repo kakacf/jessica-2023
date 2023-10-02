@@ -57,7 +57,7 @@
         display: flex;
         align-items: center;
 
-        // https://segmentfault.com/a/1190000003931845
+        // 長方形圖片切成圓形定位 https://segmentfault.com/a/1190000003931845
         &__square {
             position: relative;
             width: 40rem;
@@ -67,8 +67,7 @@
             border: 1rem solid $color-white;
         }
 
-        &__kaka {
-
+        &__avatar {
             width: 100%;
             height: auto;
             margin-top: -8%;

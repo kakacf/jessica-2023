@@ -1,0 +1,49 @@
+.section-2-old {
+    display: flex;
+    justify-content: center;
+    background-color: $bg-color-secondary;
+    padding: $section-padding;
+
+    .section__container {
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        // font-size: $font-size-default;
+        padding: 8rem 0;
+        gap: 3rem;
+    }
+
+    .title {
+        font-size: 3rem;
+        font-weight: $font-weight-bold;
+        max-width: 500px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        // width: 30%;
+        gap: 2rem;
+
+        &__icon {
+            width: 4rem;
+        }
+
+        &__title {
+            font-weight: $font-weight-bold;
+        }
+
+        &__sub {
+            color: $color-dark-grey;
+            line-height: 1.4;
+        }
+    }
+}

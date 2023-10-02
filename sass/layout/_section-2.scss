@@ -5,45 +5,126 @@
     padding: $section-padding;
 
     .section__container {
-        // width: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         // font-size: $font-size-default;
-        padding: 8rem 0;
-        gap: 3rem;
+        padding: $section-padding-top-bottom;
+        gap: 2rem;
     }
 
     .title {
-        font-size: 3rem;
+        // width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 2.8rem;
         font-weight: $font-weight-bold;
-        max-width: 500px;
+        
+
+    }
+
+    .article {
+        width: 80%;
+        // display: flex;
+        // justify-content: center;
+        text-align: center;
+        line-height: 1.8;
+        
     }
 
     .cards {
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        // flex-wrap: wrap;
-        gap: 5rem;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2rem;
+        
+
     }
 
     .card {
-        display: flex;
-        flex-direction: column;
-        // width: 30%;
-        gap: 2rem;
+        position: relative;
+        // flex: 1;
+        min-width: 28rem;
+        height: 25rem;
+        padding: 2rem;
 
-        &__icon {
-            width: 4rem;
+        // 3D 透視
+        perspective: 150rem; // 值越小，视角越深。
+        -moz-perspective: 150rem;
+
+        
+        &__side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            // flex: 1;
+            min-width: 28rem;
+            height: 25rem;
+            padding: 3rem;
+            border: 1px solid $color-light-grey;
+            border-radius: 2rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+
+            overflow: hidden;
+            backface-visibility: hidden; // 背面不透視
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+            transition: all .8s ease;
+
+            &--front {
+                background-color: $bg-color-secondary;
+            }
+
+            &--back {
+                background-color: $bg-color-secondary;
+                transform: rotateY(180deg);
+                line-height: 1.6;
+                ol {
+                    margin: 0;
+                    font-size: 1.5rem;
+                }
+            }
         }
 
+        &:hover {
+            .card__side--front {
+                transform: rotateY(-180deg);
+            }
+        }
+    
+        &:hover {
+            .card__side--back {
+                transform: rotateY(0deg);
+            }
+        }
+    
         &__title {
-            font-weight: $font-weight-bold;
+            &--1 {
+                font-weight: $font-weight-bold;
+                color: $color-primary;
+            }
+            &--2 {
+                font-size: 1.8rem;
+                font-weight: $font-weight-medium;
+            }
         }
 
+        
         &__sub {
             color: $color-dark-grey;
             line-height: 1.4;
+            font-size: 1.8rem;
         }
     }
+
+
+    
+
+    
 }
