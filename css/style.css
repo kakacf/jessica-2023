@@ -212,7 +212,7 @@ header .nav__item:hover {
   line-height: 1.8;
 }
 .section-2 .cards {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -235,7 +235,7 @@ header .nav__item:hover {
   min-width: 28rem;
   height: 25rem;
   padding: 3rem;
-  border: 1px solid #beb9b8;
+  border: 0.1rem solid #beb9b8;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
@@ -249,7 +249,8 @@ header .nav__item:hover {
   background-color: #ffffff;
 }
 .section-2 .card__side--back {
-  background-color: #ffffff;
+  background-image: linear-gradient(to right bottom, #7855ca, #4d13d1);
+  color: #ffffff;
   transform: rotateY(180deg);
   line-height: 1.6;
 }
